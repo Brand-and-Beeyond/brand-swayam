@@ -985,6 +985,9 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   border-bottom: 1px solid #e7e7e7;
   padding: 25px 0;
   overflow: hidden;
+  background-color: white;
+  position: relative;
+  z-index: 99;
 }
 
 .top-bar-area .row {
@@ -1244,7 +1247,8 @@ body,
 
 .banner-area .box-cell,
 .banner-area .box-cell div {
-  height: auto;
+  height: 670px;
+  padding-top: 76px;
 }
 
 .banner-area {
@@ -7630,7 +7634,7 @@ footer.demo img {
 }
 
 .linklogo .logoupper {
-  height: 30px;
+  height: 40px;
 }
 
 .rotatelogo {

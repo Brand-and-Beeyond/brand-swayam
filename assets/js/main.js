@@ -8,13 +8,7 @@
 
 (function ($) {
     "use strict";
-    $('.timer').countTo();
-    $('.fun-fact').appear(function () {
-        $('.timer').countTo();
-    }, {
-        accY: -100
-    });
-
+   
     $(document).on('ready', function () {
 
 

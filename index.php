@@ -1,11 +1,83 @@
 <?php include('header.php') ?>
+<style>
+    .h-section {
+        background: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+        margin: 0 10px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
 
+    .h-section.first h2.why-choose-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.3;
+        letter-spacing: 0.5px text-transform: uppercase;
+        color: #000;
+    }
+
+    .h-section.third {
+        background-image: url("./images/home_page/why-need-website.webp");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 30%;
+    }
+
+    .h-section.third .wc-title {
+        margin: 0 0 80px 0;
+    }
+
+    .wc-subtitle {
+        color: var(--theme-pink);
+    }
+
+    .wc-title {
+        font-weight: 600;
+        font-size: 42px;
+        margin: 50px 0;
+    }
+
+    .h-section.fourth {
+        background-image: url("./images/h-fourth.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+    .horizontal-scroll-1 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(6, 100%);
+        grid-template-rows: auto;
+    }
+
+    .grouplogo {
+        width: 600px;
+    }
+
+    .buinesslogo {
+        width: 300px;
+    }
+
+    .leftpattern {
+        width: 270px;
+        bottom: 2px;
+        position: absolute;
+    }
+
+    .buisnesspara {
+        font-size: 17px;
+    }
+</style>
 
 <div class="banner-area video-bg-live">
     <div class="player"
         data-property="{videoURL:'https://www.youtube.com/watch?v=gOqlwlQjVis',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:4, opacity:1, quality:'default'}">
     </div>
-    <div class="item transparent-nav text-light bg-fixed" style="background-image: url(assets/img/banner/12.jpg);">
+    <div class="item transparent-nav text-light bg-fixed" style="background-image: url(assets/img/12.jpg);">
         <div class="box-table inc-top-heading text-medium">
             <div class="box-cell shadow dark">
                 <div class="container">
@@ -238,10 +310,67 @@
         </div>
     </div>
 </div>
-<!-- End Expertise Area -->
 
-<!-- Start Our Services
-    ============================================= -->
+<section>
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="horizontal-scroll-1">
+                <div class="h-section first" style="--bg-color: #fff1f4;">
+                    <div class="container text-center">
+                        <!-- <h2 class="why-choose-title wow flipInX" data-wow-offset="300">Swayam Groups
+                        </h2> -->
+                        <img src="assets/img/buisness/swayam_group.png" class="img-fluid grouplogo" alt="">
+                    </div>
+                </div>
+                <div class="h-section second relative" style="--bg-color: #f3ecec">
+                    <img src="assets/img/left-pattern.png" alt="left pattern"
+                        class="img-fluid position-absolute leftpattern">
+                    <div class="container text-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center align-items-center">
+                                <img src="assets/img/buisness/swayam_infra.png" class="img-fluid buinesslogo" alt="">
+                                <p class="buisnesspara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt quo, maiores soluta explicabo corporis nostrum voluptatum autem suscipit in
+                                    laudantium exercitationem illo repellat ut aliquid incidunt velit adipisci sunt?
+                                    Dolores.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="h-section third" style="--bg-color: #fffaf0">
+                    <div class="container text-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center align-items-center">
+                                <img src="assets/img/buisness/swayam_foundation.png" class="img-fluid buinesslogo"
+                                    alt="">
+                                <p class="buisnesspara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt quo, maiores soluta explicabo corporis nostrum voluptatum autem suscipit in
+                                    laudantium exercitationem illo repellat ut aliquid incidunt velit adipisci sunt?
+                                    Dolores.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="h-section fifth" style="--bg-color: #fff1fd">
+                    <div class="container text-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center align-items-center">
+                                <img src="assets/img/buisness/swayam_reality.png" class="img-fluid buinesslogo" alt="">
+                                <p class="buisnesspara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nesciunt quo, maiores soluta explicabo corporis nostrum voluptatum autem suscipit in
+                                    laudantium exercitationem illo repellat ut aliquid incidunt velit adipisci sunt?
+                                    Dolores.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+</section>
+
+
 <div class="services-area text-center carousel-shadow default-padding">
     <div class="container">
         <div class="row">
@@ -269,7 +398,8 @@
                         </div>
                         <h4>Business Strategy</h4>
                         <p>
-                            Minuter believe service arrived civilly add all. Acuteness allowance an at eagerness
+                            Minuter believe service arrived civilly add all. Acuteness allowance an at
+                            eagerness
                             favourite in extensive exquisite ye.
                         </p>
                         <a href="#">Read More <i class="ti-arrow-right"></i></a>
@@ -287,7 +417,8 @@
                         </div>
                         <h4>Resource Allocation</h4>
                         <p>
-                            Minuter believe service arrived civilly add all. Acuteness allowance an at eagerness
+                            Minuter believe service arrived civilly add all. Acuteness allowance an at
+                            eagerness
                             favourite in extensive exquisite ye.
                         </p>
                         <a href="#">Read More <i class="ti-arrow-right"></i></a>
@@ -305,7 +436,8 @@
                         </div>
                         <h4>Capital Markets</h4>
                         <p>
-                            Minuter believe service arrived civilly add all. Acuteness allowance an at eagerness
+                            Minuter believe service arrived civilly add all. Acuteness allowance an at
+                            eagerness
                             favourite in extensive exquisite ye.
                         </p>
                         <a href="#">Read More <i class="ti-arrow-right"></i></a>
@@ -323,7 +455,8 @@
                         </div>
                         <h4>Business Strategy</h4>
                         <p>
-                            Minuter believe service arrived civilly add all. Acuteness allowance an at eagerness
+                            Minuter believe service arrived civilly add all. Acuteness allowance an at
+                            eagerness
                             favourite in extensive exquisite ye.
                         </p>
                         <a href="#">Read More <i class="ti-arrow-right"></i></a>
@@ -378,291 +511,9 @@
         </div>
     </div>
 </div>
-<!-- End Fun Fact Area -->
 
-<!-- Star Team Area
-    ============================================= -->
-<div class="team-area default-padding bottom-less">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="site-heading text-center">
-                    <h4>Our Experts</h4>
-                    <h2>Meet Our Team</h2>
-                </div>
-            </div>
-        </div>
-        <div class="team-items text-center">
-            <div class="row">
-                <!-- Single Item -->
-                <div class="single-item col-md-3 col-sm-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <!-- <img src="assets/img/team/1.jpg" alt="Thumb"> -->
-                            <ul class="social">
-                                <li class="facebook">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="behance">
-                                    <a href="#">
-                                        <i class="fab fa-behance"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <div class="inner">
-                                <h4>Mike Dooley</h4>
-                                <span>Chief Executive</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="single-item col-md-3 col-sm-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <!-- <img src="assets/img/team/2.jpg" alt="Thumb"> -->
-                            <ul class="social">
-                                <li class="facebook">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="behance">
-                                    <a href="#">
-                                        <i class="fab fa-behance"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <div class="inner">
-                                <h4>Chris Wensel</h4>
-                                <span>Vice President</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="single-item col-md-3 col-sm-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <!-- <img src="assets/img/team/3.jpg" alt="Thumb"> -->
-                            <ul class="social">
-                                <li class="facebook">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="behance">
-                                    <a href="#">
-                                        <i class="fab fa-behance"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <div class="inner">
-                                <h4>Richard Muldoone</h4>
-                                <span>Legal Officer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="single-item col-md-3 col-sm-6">
-                    <div class="item">
-                        <div class="thumb">
-                            <!-- <img src="assets/img/team/4.jpg" alt="Thumb"> -->
-                            <ul class="social">
-                                <li class="facebook">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="behance">
-                                    <a href="#">
-                                        <i class="fab fa-behance"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <div class="inner">
-                                <h4>John Martin</h4>
-                                <span>Finance Head</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Team Area -->
 
-<!-- Star Blog Area
-    ============================================= -->
-<div class="blog-area bg-gray default-padding bottom-less">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="site-heading text-center">
-                    <h4>Our Blog</h4>
-                    <h2>Latest News</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="blog-items">
-                <!-- Single Item -->
-                <div class="col-md-4 single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a href="blog-single-right-sidebar.html">
-                                <!-- <img src="assets/img/blog/33.jpg" alt="Thumb"> -->
-                                <div class="post-date">
-                                    12 Jul
-                                </div>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <div class="tags">
-                                <a href="#">asset</a> ,
-                                <a href="#">earning</a>
-                            </div>
-                            <h4>
-                                <a href="blog-single-right-sidebar.html">Partiality motionless she inquietude
-                                    contrasted</a>
-                            </h4>
-                            <p>
-                                Sitting mistake towards his few country ask. You delighted two rapturous six
-                                depending objection happiness something.
-                            </p>
-                        </div>
-                        <div class="meta">
-                            <ul>
-                                <li>
-                                    <!-- <a href="#"> <img src="assets/img/teams/1.jpg" alt="Author"> Author</a> -->
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-comments"></i> 15 Comments</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-md-4 single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a href="blog-single-right-sidebar.html">
-                                <!-- <img src="assets/img/blog/11.jpg" alt="Thumb"> -->
-                                <div class="post-date">
-                                    27 Apr
-                                </div>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <div class="tags">
-                                <a href="#">Business</a>
-                            </div>
-                            <h4>
-                                <a href="blog-single-right-sidebar.html">Motionless on reasonable projecting
-                                    expression</a>
-                            </h4>
-                            <p>
-                                Sitting mistake towards his few country ask. You delighted two rapturous six
-                                depending objection happiness something.
-                            </p>
-                        </div>
-                        <div class="meta">
-                            <ul>
-                                <li>
-                                    <!-- <a href="#"> <img src="assets/img/teams/2.jpg" alt="Author"> Author</a> -->
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-comments"></i> 15 Comments</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-md-4 single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <a href="blog-single-right-sidebar.html">
-                                <!-- <img src="assets/img/blog/22.jpg" alt="Thumb"> -->
-                                <div class="post-date">
-                                    28 Aug
-                                </div>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <div class="tags">
-                                <a href="#">asset</a> ,
-                                <a href="#">earning</a>
-                            </div>
-                            <h4>
-                                <a href="blog-single-right-sidebar.html">Contented get distrusts certainty nay are
-                                    frankness</a>
-                            </h4>
-                            <p>
-                                Sitting mistake towards his few country ask. You delighted two rapturous six
-                                depending objection happiness something.
-                            </p>
-                        </div>
-                        <div class="meta">
-                            <ul>
-                                <li>
-                                    <!-- <a href="#"> <img src="assets/img/teams/3.jpg" alt="Author"> Author</a> -->
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-comments"></i> 15 Comments</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Blog Area -->
 
-<!-- Start Contact Area
-    ============================================= -->
 <div class="contact-area default-padding-top bottom-half">
     <div class="container">
         <div class="contact-items">
@@ -692,7 +543,8 @@
                 <div class="col-md-6 form-box">
                     <h2>Let's lalk about your idea</h2>
                     <p>
-                        Our next drew much you with rank. Tore many held age hold rose than our. She literature
+                        Our next drew much you with rank. Tore many held age hold rose than our. She
+                        literature
                         sentiments any contrasted. Set aware joy sense young now tears china shy.
                     </p>
                     <form action="assets/mail/contact.php" method="POST" class="contact-form">
@@ -760,36 +612,36 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const logo = document.querySelector(".rotatelogo");
-  let previousScrollY = window.scrollY;
-  let rotationAngle = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+        const logo = document.querySelector(".rotatelogo");
+        let previousScrollY = window.scrollY;
+        let rotationAngle = 0;
 
-  window.addEventListener("scroll", function () {
-    const currentScrollY = window.scrollY;
+        window.addEventListener("scroll", function () {
+            const currentScrollY = window.scrollY;
 
-    // Check if scrolling down or up
-    if (currentScrollY > previousScrollY) {
-      // Scrolling down, increase the rotation angle
-      rotationAngle += 5; // Increase the rotation angle for smoother screw-like effect
-    } else if (currentScrollY < previousScrollY) {
-      // Scrolling up, decrease the rotation angle
-      rotationAngle -= 5;
-    }
+            // Check if scrolling down or up
+            if (currentScrollY > previousScrollY) {
+                // Scrolling down, increase the rotation angle
+                rotationAngle += 5; // Increase the rotation angle for smoother screw-like effect
+            } else if (currentScrollY < previousScrollY) {
+                // Scrolling up, decrease the rotation angle
+                rotationAngle -= 5;
+            }
 
-    // Apply rotation and make logo visible after 1px scroll
-    if (currentScrollY > 1) {
-      logo.classList.add("visible");
-      logo.style.transform = `rotate(${rotationAngle}deg)`;
-    } else {
-      logo.classList.remove("visible");
-      logo.style.transform = "rotate(0deg)"; // Reset rotation
-    }
+            // Apply rotation and make logo visible after 1px scroll
+            if (currentScrollY > 1) {
+                logo.classList.add("visible");
+                logo.style.transform = `rotate(${rotationAngle}deg)`;
+            } else {
+                logo.classList.remove("visible");
+                logo.style.transform = "rotate(0deg)"; // Reset rotation
+            }
 
-    // Update previous scroll position
-    previousScrollY = currentScrollY;
-  });
-});
+            // Update previous scroll position
+            previousScrollY = currentScrollY;
+        });
+    });
 
 
 </script>
