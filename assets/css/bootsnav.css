@@ -652,9 +652,7 @@ nav.bootsnav .dropdown.megamenu-fw {
     color: #ff4157;
   }
   
-  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:hover::after {
-    content: "\f106";
-  }
+ 
   
 
   

@@ -29,11 +29,12 @@
       <script src="assets/js/html5/html5shiv.min.js"></script>
       <script src="assets/js/html5/respond.min.js"></script>
     <![endif]-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -99,7 +100,7 @@
 
                     <li class="rotatelogo">
                         <a href="index.php" class="linklogo">
-                            <img src="assets/img/swayamuppper.jpg" class="logo logoupper p-0" alt="Logo">
+                            <img src="assets/img/favicon.png" class="logo logoupper p-0" alt="Logo">
                         </a>
                     </li>
                     <!-- Start Top Search -->
@@ -120,7 +121,7 @@
                         <div class="attr-nav">
                             <ul>
                                 <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
-                                <li class="side-menu"><a href="#"><i class="fas fa-bars"></i></a></li>
+                               
                             </ul>
                         </div>
                         <!-- End Atribute Navigation -->
@@ -144,27 +145,22 @@
 
 
                                 <li class="dropdown">
-                                    <a href="index.php" class="nav-link active" data-toggle="dropdown">Home</a>
+                                    <a href="index.php" class="nav-link active">Home</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="about.php" class="nav-link" data-toggle="dropdown">About</a>
+                                    <a href="about.php" class="nav-link">About</a>
 
                                 </li>
-
 
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="services.html">Services Version One</a></li>
-                                        <li><a href="services-2.html">Services Version Two</a></li>
-                                        <li><a href="services-3.html">Services Version Three</a></li>
-                                        <li><a href="services-single.html">Services Single</a></li>
-                                    </ul>
+                                    <a href="services.php" class="nav-link">Services</a>
+
                                 </li>
+                              
 
 
                                 <li>
-                                    <a href="contact.php">contact</a>
+                                    <a href="contact.php" class="nav-link">contact</a>
                                 </li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -234,3 +230,4 @@
 
         </header>
         <div class="smooth">
+          

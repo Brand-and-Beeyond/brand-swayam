@@ -1,30 +1,43 @@
+<?php
+// Start the session at the very top of the file, before any HTML
+session_start();
+?>
 
 <?php include('header.php') ?>
 
-
 <div class="page-title-area shadow dark bg-fixed text-center text-light"
-    style="background-image: url(assets/img/banner/20.jpg);">
+    style="background-image: url(assets/img/contactbanner.png);">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-12 col-md-12">
                 <h1>Contact Us</h1>
             </div>
         </div>
     </div>
 </div>
-<!-- End Page Title -->
 
-
-
-<!-- Start Contact Area
-    ============================================= -->
 <div class="contact-area default-padding-top bottom-half">
     <div class="container">
         <div class="contact-items">
             <div class="row">
+                <div class="col-md-12">
+                    <?php
+            
+                    if (isset($_SESSION['message'])) {
+                        $message_type = $_SESSION['message_type'];
+                        echo "<div class='alert alert-$message_type'>{$_SESSION['message']}</div>";
+                        // Clear the session message after displaying
+                        unset($_SESSION['message']);
+                        unset($_SESSION['message_type']);
+                    }
+                    ?>
+                </div>
+            </div>
+            <div class="row">
+
                 <div class="col-md-6 address">
-                    <div class="address-items text-center text-light"
-                        style="background-image: url(assets/img/13.jpg);">
+                    <div class="address-items text-center text-light" style="background-image: url(assets/img/13.jpg);">
                         <ul class="info">
                             <li>
                                 <div class="icon"><i class="flaticon-location"></i></div>
@@ -45,16 +58,17 @@
                     </div>
                 </div>
                 <div class="col-md-6 form-box">
-                    <h2>Let's lalk about your idea</h2>
+                    <h2>Let's talk about your idea</h2>
                     <p>
                         Our next drew much you with rank. Tore many held age hold rose than our. She literature
                         sentiments any contrasted. Set aware joy sense young now tears china shy.
                     </p>
-                    <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                    <form action="sendmail.php" method="POST" class="contact-form">
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                        required>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -63,13 +77,14 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input class="form-control" id="email" name="email" placeholder="Email*"
-                                        type="email">
+                                        type="email" required>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text"
+                                        required>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -78,7 +93,7 @@
                             <div class="row">
                                 <div class="form-group comments">
                                     <textarea class="form-control" id="comments" name="comments"
-                                        placeholder="Tell Us About Project *"></textarea>
+                                        placeholder="Tell Us About Project *" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +104,6 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- Alert Message -->
                         <div class="col-md-12 alert-notification">
                             <div id="message" class="alert-msg"></div>
                         </div>
@@ -99,10 +113,7 @@
         </div>
     </div>
 </div>
-<!-- End Contact Area -->
 
-<!-- Star Google Maps
-    ============================================= -->
 <div class="maps-area">
     <div class="container-full">
         <div class="row">
@@ -113,6 +124,5 @@
         </div>
     </div>
 </div>
-
 
 <?php include('footer.php') ?>

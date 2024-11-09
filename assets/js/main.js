@@ -8,7 +8,29 @@
 
 (function ($) {
     "use strict";
-   
+    $('.testimonial-carousel').owlCarousel({
+        loop: false,
+        margin: 30,
+        nav: false,
+        navText: [
+            "<i class='fa fa-angle-left'></i>",
+            "<i class='fa fa-angle-right'></i>"
+        ],
+        dots: true,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            800: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    });
+
     $(document).on('ready', function () {
 
 
@@ -255,28 +277,6 @@
         /* ==================================================
             # Testimonial Carousel
          ===============================================*/
-        $('.testimonial-carousel').owlCarousel({
-            loop: false,
-            margin: 30,
-            nav: false,
-            navText: [
-                "<i class='fa fa-angle-left'></i>",
-                "<i class='fa fa-angle-right'></i>"
-            ],
-            dots: true,
-            autoplay: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                800: {
-                    items: 2
-                },
-                1000: {
-                    items: 2
-                }
-            }
-        });
 
 
         /* ==================================================

@@ -120,9 +120,34 @@
 <!-- jQuery Frameworks
     ============================================= -->
 <script src="assets/js/jquery-1.12.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
+<script>
 
+document.addEventListener("DOMContentLoaded",function(){
+     const navLinks = document.querySelectorAll('.nav-link');
+     
+     const currentUrl =window.location.href;
+
+     navLinks.forEach(link=>{
+          if(link.href === currentUrl){
+             link.classList.add('active');
+          }
+          else{
+            link.classList.remove("active");
+          }
+     });
+});
+
+
+$('.timer').countTo();
+    $('.fun-fact').appear(function () {
+        $('.timer').countTo();
+    }, {
+        accY: -100
+    });
+</script>
 
 <script>
     $('.services-carousel').owlCarousel({
@@ -165,10 +190,7 @@
 <script src="assets/js/jquery.easing.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/modernizr.custom.13711.js"></script>
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/ScrollSmoother.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
+
 <script src="assets/js/progress-bar.min.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>
 
@@ -178,8 +200,14 @@
 <script src="assets/js/bootsnav.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://kit.fontawesome.com/38c43e86be.js" crossorigin="anonymous"></script>
-
-
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true });
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var smoother = ScrollSmoother.create({
@@ -219,14 +247,10 @@
         }
 
     });
-    $('.timer').countTo();
-    $('.fun-fact').appear(function () {
-        $('.timer').countTo();
-    }, {
-        accY: -100
-    });
+   
 
 </script>
+
 </body>
 
 </html>

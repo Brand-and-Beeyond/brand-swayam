@@ -217,7 +217,8 @@
                 </ul>
             </div>
             <div class="col-md-5 thumb">
-                <img src="assets/img/7.jpg" alt="Thumb">
+                <img src="assets/img/7.jpg" alt="Thumb" data-aos="flip-left" data-aos-duration="900"
+                    data-aos-offset="100">
             </div>
         </div>
 
@@ -319,12 +320,52 @@
                     <div class="container text-center">
                         <!-- <h2 class="why-choose-title wow flipInX" data-wow-offset="300">Swayam Groups
                         </h2> -->
-                        <img src="assets/img/buisness/swayam_group.png" class="img-fluid grouplogo" alt="">
+                        <img src="assets/img/buisness/swayam_group.png" class="img-fluid grouplogo"
+                            data-aos="zoom-in-up" data-aos-duration="1000" data-aos-offset="150" alt="">
                     </div>
                 </div>
                 <div class="h-section second relative" style="--bg-color: #f3ecec">
-                    <img src="assets/img/left-pattern.png" alt="left pattern"
-                        class="img-fluid position-absolute leftpattern">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247 324" width="247" height="324"
+                        class="leftpattern">
+                        <title>left-pattern-svg</title>
+                        <defs>
+                            <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                <path
+                                    d="m247 304c0 11.05-8.95 20-20 20h-207c-11.05 0-20-8.95-20-20v-284c0-11.05 8.95-20 20-20h207c11.05 0 20 8.95 20 20z" />
+                            </clipPath>
+                        </defs>
+                        <style>
+                            .s0 {
+                                fill: none;
+                                stroke: #ffffff;
+                                stroke-linecap: round;
+                                stroke-width: 20
+                            }
+
+                            .s1 {
+                                fill: #fe6039;
+                            }
+
+                            .s2 {
+                                fill: none;
+                                stroke: #ffffff;
+                                stroke-linecap: round;
+                                stroke-width: 2.7
+                            }
+                        </style>
+                        <g id="Clip-Path: Clip-Path" clip-path="url(#cp1)">
+                            <g id="Clip-Path">
+                                <g id="Layer">
+                                    <path id="Layer" class="s0"
+                                        d="m-120.7 367.1c-23.6 18.6-47.3 43.2-50 70-2.8 26.8 15.3 55.6 32.7 86.4 17.6 30.8 34.8 63.4 59.9 70.9 25.2 7.5 58.3-10 89.6-22.8 31.3-12.7 60.8-20.5 82.2-39.2 21.4-18.8 35.1-48.5 40-80.9 4.7-32.1 0.8-67.1-12.4-103.6-13.1-36.5-35.6-74.7-65.6-79-30.1-4.3-67.9 25.5-98.7 46.5-30.6 20.9-54.3 33.4-77.7 51.7z" />
+                                    <path id="Layer" class="s1"
+                                        d="m-115.3 394c27.9 11.1 61.1 19.3 85.7 8.3 24.6-11 40.4-41 58.4-71.5 17.9-30.7 37.5-61.8 31.5-87.4-6.1-25.5-37.9-45.5-64.6-66.2-26.7-20.7-48.1-42.4-75.1-51.5-26.9-9.2-59.5-6.2-90 5.7-30.1 12-58.5 32.9-83.6 62.6-25 29.6-46.8 68.1-35.5 96.3 11.3 28.2 56 46.1 89.6 62.3 33.4 16 56.1 30.3 83.6 41.4z" />
+                                    <path id="Layer" class="s2"
+                                        d="m-120.7 367.1c-23.6 18.6-47.3 43.2-50 70-2.8 26.8 15.3 55.6 32.7 86.4 17.6 30.8 34.8 63.4 59.9 70.9 25.2 7.5 58.3-10 89.6-22.8 31.3-12.7 60.8-20.5 82.2-39.2 21.4-18.8 35.1-48.5 40-80.9 4.7-32.1 0.8-67.1-12.4-103.6-13.1-36.5-35.6-74.7-65.6-79-30.1-4.3-67.9 25.5-98.7 46.5-30.6 20.9-54.3 33.4-77.7 51.7z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
                     <div class="container text-center">
                         <div class="col-12">
                             <div class="row justify-content-center align-items-center">
@@ -514,83 +555,78 @@
 
 
 
-<div class="contact-area default-padding-top bottom-half">
+<div class="testimonials-area carousel-shadow default-padding">
     <div class="container">
-        <div class="contact-items">
-            <div class="row">
-                <div class="col-md-6 address">
-                    <div class="address-items text-center text-light"
-                        style="background-image: url(assets/img/about/5.jpg);">
-                        <ul class="info">
-                            <li>
-                                <div class="icon"><i class="flaticon-location"></i></div>
-                                <h4>Office Location</h4>
-                                <span>22 Baker Street,<br> London, United Kingdom,<br> W1U 3BW</span>
-                            </li>
-                            <li>
-                                <div class="icon"><i class="flaticon-call-center"></i></div>
-                                <h4>Phone</h4>
-                                <span>+44-20-7328-4499 <br>+99-34-8878-9989</span>
-                            </li>
-                            <li>
-                                <div class="icon"><i class="flaticon-email"></i> </div>
-                                <h4>Email</h4>
-                                <span>info@yourdomain.com<br>admin@yourdomain.com</span>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="site-heading text-center">
+                    <h4>Testimonials</h4>
+                    <h2>What Client Says</h2>
                 </div>
-                <div class="col-md-6 form-box">
-                    <h2>Let's lalk about your idea</h2>
-                    <p>
-                        Our next drew much you with rank. Tore many held age hold rose than our. She
-                        literature
-                        sentiments any contrasted. Set aware joy sense young now tears china shy.
-                    </p>
-                    <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                    <span class="alert-error"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="testimonial-box">
+                <div class="row">
+                    <div class="testimonial-items testimonial-carousel owl-carousel owl-theme">
+                        <!-- Single Item -->
+                        <div class="item">
+                            <i class="fas fa-quote-right"></i>
+                            <p>
+                                Adieus except say barton put feebly favour consistence. Entreaties unpleasant sufficient
+                                few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do
+                                neither. Warmth object matter course.
+                            </p>
+                            <div class="author">
+                                <div class="avatar">
+                                    <img src="assets/img/teams/1.jpg" alt="Thumb">
+                                </div>
+                                <div class="info">
+                                    <h4>Sunath park</h4>
+                                    <span>Markeing Manager</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email*"
-                                        type="email">
-                                    <span class="alert-error"></span>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="item">
+                            <i class="fas fa-quote-right"></i>
+                            <p>
+                                Adieus except say barton put feebly favour consistence. Entreaties unpleasant sufficient
+                                few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do
+                                neither. Warmth object matter course.
+                            </p>
+                            <div class="author">
+                                <div class="avatar">
+                                    <img src="assets/img/teams/2.jpg" alt="Thumb">
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="form-group comments">
-                                    <textarea class="form-control" id="comments" name="comments"
-                                        placeholder="Tell Us About Project *"></textarea>
+                                <div class="info">
+                                    <h4>Marron Bua</h4>
+                                    <span>Director</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <button type="submit" name="submit" id="submit">
-                                    Send Message <i class="fa fa-paper-plane"></i>
-                                </button>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="item">
+                            <i class="fas fa-quote-right"></i>
+                            <p>
+                                Adieus except say barton put feebly favour consistence. Entreaties unpleasant sufficient
+                                few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do
+                                neither. Warmth object matter course.
+                            </p>
+                            <div class="author">
+                                <div class="avatar">
+                                    <img src="assets/img/teams/3.jpg" alt="Thumb">
+                                </div>
+                                <div class="info">
+                                    <h4>Aunoath Jaru</h4>
+                                    <span>Designer</span>
+                                </div>
                             </div>
                         </div>
-                        <!-- Alert Message -->
-                        <div class="col-md-12 alert-notification">
-                            <div id="message" class="alert-msg"></div>
-                        </div>
-                    </form>
+                        <!-- End Single Item -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -600,16 +636,7 @@
 
 <!-- Star Google Maps
     ============================================= -->
-<div class="maps-area">
-    <div class="container-full">
-        <div class="row">
-            <div class="google-maps">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {

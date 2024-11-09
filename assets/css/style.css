@@ -583,7 +583,7 @@ input {
 
 .bg-fixed {
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -921,7 +921,11 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 .page-title-area {
-  padding: 150px 0;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 }
 
 .page-title-area h1 {
@@ -1703,7 +1707,7 @@ body,
 }
 
 .banner-area .text-medium .content h2 strong {
-  color: #ff4450;
+  color: #fd3e40;
 }
 
 .banner-area .text-medium .content a {
@@ -2778,7 +2782,7 @@ body,
   content: "";
   height: 100%;
   width: 100%;
-  background: url(/assets/img/shape.png);
+  background: url('../img/shape.png');
   background-repeat: no-repeat;
   background-position: right top;
   z-index: -1;
@@ -2915,8 +2919,8 @@ body,
 }
 
 .services-area .services-items.services-carousel .owl-dots .owl-dot.active span {
-  background: #ff4949 none repeat scroll 0 0;
-  border-color: #ff4949;
+  background: #fd3e40 none repeat scroll 0 0;
+  border-color: #fd3e40;
 }
 
 
@@ -3571,7 +3575,7 @@ body,
   content: "";
   height: 100%;
   width: 50%;
-  background: #ff4450;
+  background:linear-gradient(35deg,#fd3e40,#fe7735);
   z-index: -1;
   opacity: 1;
 }
@@ -6264,7 +6268,7 @@ form.white-popup-block li.linkedin a {
 
 .contact-area .contact-items .form-box button {
   border: none;
-  background: #ff4450;
+  background: #fd3e40;
   padding: 12px 35px;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
@@ -7646,4 +7650,11 @@ footer.demo img {
 }
 .rotatelogo.visible {
   display: inline; /* Show when scrolled */
+}
+
+
+@media(max-width:900px){
+  .linklogo .logoupper {
+    display: none;
+  }
 }
